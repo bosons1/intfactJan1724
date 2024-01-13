@@ -34,8 +34,6 @@ if __name__ == "__main__":
         ss = pp + nn + ee
         zz = zero[pos]
         pos = pos + 1
-        if int(ss) in primes:
-            print(ss, zz)
         if int(ss) in primes and zz == '0':
             input([ss, zz])
             zero_index = zero_index + 1
