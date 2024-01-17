@@ -108,4 +108,6 @@ def define(num):
                         probable_next_states.append(primes[last_prime_index-int(n3) - 1])
                         probable_next_indices.append(last_prime_index - int(n3) - 1)
                         length_increment.append(1)
+    f.close()
+    g.close()
     return states, pos
