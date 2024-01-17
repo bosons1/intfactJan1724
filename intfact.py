@@ -54,7 +54,6 @@ def define(num):
     pos = 0
     states = []
     while c < l2:
-        print(c, l2)
         pp = f.read(1)
         ee = g.read(1)
         pos = pos + 1
@@ -62,7 +61,6 @@ def define(num):
             ss = pp + str(x) + ee
             if int(ss) in primes and int(ss) in probable_next_states:
                 states.append(x)
-                input(ss)
                 idx = probable_next_states.index(int(ss))
                 last_prime_index = probable_next_indices[idx]
                 c = c + length_increment[idx]
@@ -84,7 +82,6 @@ def define(num):
                         n3 = 10
                 else:
                     break
-                input([n1, n2, n3])
                 if n1 != "" and (last_prime_index + int(n1) + 1 < 167 or last_prime_index - int(n1) - 1 >= 0):
                     if last_prime_index + int(n1) + 1 < 167:
                         probable_next_states.append(primes[last_prime_index+int(n1) + 1])
